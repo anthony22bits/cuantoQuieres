@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            font-size: 62.5%;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+           
+        body{
+            width: 100vw;
+           background: url('https://images.pexels.com/photos/9827007/pexels-photo-9827007.jpeg?cs=srgb&dl=pexels-boys-in-bristol-photography-9827007.jpg&fm=jpg');
+            background-position: center;
+            background-size: 250%;
+            background-repeat: no-repeat;
+           
+        
+        }
+        
+      h1{
+        width: 100vw;
+        height: 60px;
+   
+        text-align: center;
+        font-size: 3.2rem;
+        color: white;
+       
+      }
+      h1::after{
+        content: '🐰';
+      }
+      .container{
+        margin: 40px auto 0;
+        max-width: 400px;
+        height: calc(100vh - 60px);
+        display: grid;
+         place-items: center;
+        
+        
+      }
+      div{
+        margin: 2px 0;
+      }
+      label{
+        display: block;
+        margin-bottom: 10px;
+        font-size: 1.6rem;
+        color: yellow;
+        font-weight: bold;
+        
+      }
+      input{
+        display: block;
+        padding: 15px;
+        width: 400px;
+        border-radius: 10px;
+        border: none;
+      }
+      #btnCalcular{
+        padding: 20px;
+        width: 200px;
+        color: yellow;
+        background-color: blueviolet;
+        border: none;
+
+      }
+      textarea{
+        width: 60%;
+        height: 80px;
+        border-radius: 10px;
+      }
+     
+    </style>
+</head>
+<body>
+    <h1>Calculadora para saber cuanto me quiere mi coneja  </h1>
+    <div class="container">
+        <div>
+            <label>Como se llama el amor de tu vida? PD: te doy una pista 🐻</label>
+            <input id="calculo1" placeholder="Escribe algo aqui">
+        </div>
+       <div>
+            <label>Cuanto me quieres del 1 al 10?</label>
+            <input id="calculo2" placeholder="Escribe algo aqui" type="number">
+       </div>
+        <button id="btnCalcular"  >Calcular</button>
+        <textarea placeholder="Resultado" class="text-area"></textarea>
+    <p id="result1"></p>
+    </div>
+    <p id="result1"> </p>
+    <script src="./Dom.js"></script>
+</body>
+</html>
